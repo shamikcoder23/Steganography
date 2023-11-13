@@ -1,0 +1,64 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Courier Prime', monospace;
+}
+h1 h2 h3{    
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+p{
+    color: darkslategray;
+}
+button{
+    width: 150px;
+    border-radius: 30%;
+    background-color: lavender;
+}
+a{
+    text-decoration: none;
+    text-shadow: 2px;
+    color: black;
+}
+img{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img:hover{
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.large-btn{
+    font-size: large;
+    width: 200px;
+    height: 70px;
+    border-radius: 20%;
+    background-color: lavender;
+}
+
+.lab{
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: dashed;
+}
