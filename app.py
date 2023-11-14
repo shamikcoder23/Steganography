@@ -81,6 +81,14 @@ def home():
 				n += 1
 				m += 1
 				z = (z+1) % 3
+		m = 0
+		n = 0
+		z = 0
+		for i in range(len(msg)):
+			img[n,m,z] = random.randrange(0,1)
+			n += 1
+			m += 1
+			z = (z+1) % 3
 		cv2.imwrite("static/Encrypt_new.png", img)
 		return redirect(url_for("message"))
 	return render_template("home.html")
