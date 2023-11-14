@@ -85,7 +85,7 @@ def home():
 		n = 0
 		z = 0
 		for i in range(len(msg)):
-			img[n,m,z] = random.randrange(0,1)
+			img[n,m,z] += random.randrange(0,1)
 			n += 1
 			m += 1
 			z = (z+1) % 3
